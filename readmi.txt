@@ -1,0 +1,51 @@
+1) После написания кода по видеоуроку 7.5 выявлены беги:
+	для полной версии сайта бекграунд сьехал в верх
+	для полной версии сайта блок top__box и блок top__info уменшились по высоте до содержимого (top__button)
+	для версии на планшете бекграунд обрезал картинку снизу
+		Кастыли:
+		для блока top__info добавлен стиль min-height: 569px; в полной версии сайта и для планшета.
+		для мобильной версии сайта к блоку top__info добавлен стиль min-height: auto;
+		
+2) После написания кода по видеоуроку 7.6 (последнее видео в ур. №7) отклонений не выявлено, но есть отличия в коде:
+	для текста на квадратных картинках в блоке project пришлось указать размеры текста.
+
+3) На момент начала адоптации подвала отображение сайта на всех устройтвах соответствует макету
+
+4) Действия для адаптации подвала на планшете:
+    .footer__heading{ margin-left: 92px; max-width: 340px; margin-top: 47px; }
+    .footer__text{ margin-left: 92px; max-width: 340px; margin-bottom: 64px; }
+    .link__footer{ padding: 3px 27px 2px; margin-right: 92px; }
+    .footer{ height: auto; padding-bottom: 64px; }
+    .footer__info{ flex-direction: column; margin-left: 92px; }
+    .footer__list:nth-child(1)::before{ margin-right: 36px; margin-bottom: 25px; }
+    .footer__list:nth-child(2)::before{ margin-right: 36px; margin-bottom: 25px; }
+    .footer__list:nth-child(3)::before{ margin-right: 36px; }
+    .footer__all__rights{ margin-left: 92px; }
+}
+
+5) Действия для адаптации подвала в мобильной версии:
+    .footer{ padding-bottom: 32px; }
+    .foter__info{ flex-direction: column; align-items: center; }
+    .footer__block__info{ display: flex; flex-direction: column; align-items: center; }
+    .footer__heading{ text-align: center; max-width: 250px; margin-top: 16px; margin-left: 16px; margin-right: 16px; margin-bottom: 0; }
+    .footer__text { text-align: center; margin-top: 16px; margin-left: 16px; margin-right: 16px; margin-bottom: 0; max-width: 650; }
+    .link__footer { padding: 3px 16px 2px; margin-right: 0; margin-top: 40px; margin-bottom: 40px; }
+    .footer__info{ flex-direction: column; margin-left: 0; margin-top: 32px; margin-bottom: 16px; }
+    .footer__list{ margin-right: 0; }
+    .footer__list:nth-child(1)::before{ content: 'A.'; display: block; margin-right: 23px; margin-bottom: 0; }
+    .footer__list:nth-child(2)::before{ content: 'T.'; display: block; margin-right: 23px; margin-bottom: 0; }
+    .footer__list:nth-child(3)::before{ content: 'E.'; display: block; margin-right: 23px; margin-bottom: 0; }
+    .element__list{ padding-bottom: 16px; }
+    .footer__all__rights{ margin-left: 0; text-align: center; }
+    
+6) Прошел валидацию для всех трех файлов (index.html, contact.html, style.css)
+	index.html: без замечаний
+	contact.html: из скрипта с картой валидатор попросил убрать type и указание кодировки текста
+	style.css: на 554 строке у ширины был указан размер без единиц измерения, строка полность удалена
+	
+7) Верстка страници Контакты выполнена полностью, но пока без адаптации под планшеты и мобильные устройства.
+
+На страцице Контакты к адаптацыи под мобильные и планшеты не приступал
+
+8) После сдачи основного задания, в свободное время, верстка выполнена в полном объеме
+    для демонстрации результата работа размещена на хостинге f0632427.xsph.ru
